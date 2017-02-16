@@ -7,10 +7,10 @@
 export function initialize() {
   const application = arguments[1] || arguments[0];
 
-  application.inject('controller', 'media', 'service:media');
-  application.inject('component', 'media', 'service:media');
-  application.inject('route', 'media', 'service:media');
-  application.inject('view', 'media', 'service:media');
+  application.inject('controller', 'clientDevice', 'service:media');
+  application.inject('component', 'clientDevice', 'service:media');
+  application.inject('route', 'clientDevice', 'service:media');
+  application.inject('view', 'clientDevice', 'service:media');
 }
 
 export default {
